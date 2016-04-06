@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>UEPF-UNAIREN EUSKAL PILOTA FEDERAKUNTZA</title>
+<link href="/UEPF/css/styleSheet.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+			<h1>Kirolarien fitxak kudeatzeko sistema</h1>
+			<h3>Benetan zu zarela frogratzeko sartu zure datuak berriz mesedez 
+			eta ondoren aukeratu burutu nahi duzun eguneraketa:</h3>
+		</header>
+		<section>
+			<form method="POST"  action="/UEPF/uepf/JspDeituServlet">
+				<table>
+	   				<tr>
+	   					<td>Nan:</td>
+	   					<td><input name="nan"/></td>
+	   				</tr>
+	   				<tr>
+	   					<td>Pasahitza:</td>
+	   					<td><input type="password" name="password"/></td>
+	   				</tr>
+	   				
+	   				
+	   				<input name="eguneraketa" type="radio" value="izena"/>Izena eguneratu</br>
+	   				<input name="eguneraketa" type="radio" value="abizena"/>Abizena eguneratu</br>
+	   				<input name="eguneraketa" type="radio" value="abizena2"/>2. abizena eguneratu</br>
+	   				<input name="eguneraketa" type="radio" value="helbidea"/>Helbidea eguneratu</br>
+	   				<input name="eguneraketa" type="radio" value="postaKodea"/>Posta kodea eguneratu</br>
+	   				<input name="eguneraketa" type="radio" value="telefonoa"/>Telefonoa eguneratu</br>
+	   				<input name="eguneraketa" type="radio" value="jaioData"/>Jaiotze data eguneratu</br>
+	   				<input name="eguneraketa" type="radio" value="email"/>Emaila eguneratu</br>
+	   				<input name="eguneraketa" type="radio" value="username"/>Erabiltzaile izena eguneratu</br>
+	   				
+	 			</table>
+	 			<button>Aurrera</button>	
+			</form>
+		</section>
+
+</body>
+</html>
